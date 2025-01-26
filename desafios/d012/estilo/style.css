@@ -29,7 +29,7 @@ header {
     text-align: center;
 }
 
-header, h1 {
+header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
     font-family: var(--fonte2);
