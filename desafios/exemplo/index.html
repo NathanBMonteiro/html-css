@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Notas Escolares</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #000;
+            text-align: center;
+            padding: 10px;
+        }
+        colgroup col {
+            background-color: #f9f9f9;
+        }
+        colgroup col.subject-math {
+            background-color: #e0f7fa;
+        }
+        colgroup col.subject-other {
+            background-color: #fff3cd;
+        }
+        thead {
+            background-color: #f1f1f1;
+        }
+        tfoot {
+            font-weight: bold;
+            background-color: #e8e8e8;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabela de Notas Escolares</h1>
+    <table>
+        <!-- Agrupamento das colunas -->
+        <colgroup>
+            <col>
+            <col class="subject-math">
+            <col class="subject-math">
+            <col class="subject-other">
+            <col class="subject-other">
+            <col>
+        </colgroup>
+
+        <!-- Cabeçalho da tabela -->
+        <thead>
+            <tr>
+                <th rowspan="2">Aluno</th>
+                <th colspan="2">Matemática</th>
+                <th rowspan="2">Português</th>
+                <th rowspan="2">Ciências</th>
+                <th rowspan="2">Média Final</th>
+            </tr>
+            <tr>
+                <th>NOTA1</th>
+                <th>NOTA2</th>
+            </tr>
+        </thead>
+
+        <!-- Corpo da tabela -->
+        <tbody>
+            <tr>
+                <td>Ana Silva</td>
+                <td>8.0</td>
+                <td>9.0</td>
+                <td>9.0</td>
+                <td>7.5</td>
+                <td>8.4</td>
+            </tr>
+            <tr>
+                <td>João Souza</td>
+                <td>7.0</td>
+                <td>6.5</td>
+                <td>8.0</td>
+                <td>6.5</td>
+                <td>7.0</td>
+            </tr>
+            <tr>
+                <td>Maria Oliveira</td>
+                <td>9.5</td>
+                <td>10.0</td>
+                <td>9.0</td>
+                <td>8.5</td>
+                <td>9.3</td>
+            </tr>
+        </tbody>
+
+        <!-- Rodapé da tabela -->
+        <tfoot>
+            <tr>
+                <td colspan="5">Média da Turma</td>
+                <td>8.2</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
