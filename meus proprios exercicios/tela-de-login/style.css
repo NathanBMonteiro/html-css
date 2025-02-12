@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+body {
+    background-image: linear-gradient(to right, yellow, cyan);
+}
+
+div {
+    background-color: rgba(15, 6, 6, 0.904);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 80px;
+    border-radius: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+h1, .login {
+    text-align: center;
+}
+
+input {
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+div,input .enviar {
+    text-align: center;
+}
+
+.enviar {
+    background-color: rgb(163, 32, 32);
+    color: white;
+}
+
+input:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.enviar:hover {
+    background-color: rgba(155, 15, 15, 0.849);
+    transform: scale(1.05);
+    transition: 0.5s;
+}

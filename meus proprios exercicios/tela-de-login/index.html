@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tela de Login</title>
+</head>
+
+<body>
+    <form action="cadastro.php" autocomplete="on" method="post" target="_blank">
+        <div>
+            <h1 class="Login">Login</h1>
+            <p> <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" placeholder="nome" minlength="10" maxlength="50" required>
+            </p>
+
+            <p> <label for="isenha">Senha</label>
+                <input type="password" name="senha" id="isenha" placeholder="senha" minlength="8" maxlength="15" required>
+            </p>
+
+            <input class="enviar" type="submit" value="Enviar">
+
+        </div>
+    </form>
+
+</body>
+
+</html>
